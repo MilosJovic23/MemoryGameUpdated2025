@@ -58,15 +58,13 @@ $(document).ready(function () {
 				$(divs[i]).appendTo(this);
 			}
 			resetCards();
-			appendNewGameButton();
+			let span = $(this).find("span");
+			$(span).appendTo(this);
 
 		});
 	}
 
-	function appendNewGameButton() {
-		let span = $(this).find("span");
-		$(span).appendTo(this);
-	}
+
 	function resetCards(){
 		cards.removeClass("flip");
 		cards.each(function () {
