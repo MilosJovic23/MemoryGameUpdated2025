@@ -64,7 +64,6 @@ $(document).ready(function () {
 		});
 	}
 
-
 	function resetCards(){
 		cards.removeClass("flip");
 		cards.each(function () {
